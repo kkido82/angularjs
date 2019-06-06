@@ -1,0 +1,18 @@
+.table {
+  display: table;
+  list-style: none;
+}
+
+ul.table li.header {
+  display: table-row;
+  font-weight: bold;
+}
+
+ul.table li span {
+  display: table-cell;
+  padding: 5px;
+}
+
+ul.table li.row {
+  display: table-row;
+}

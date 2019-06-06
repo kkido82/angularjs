@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "firstName": "firstName1",
+      "lastName": "lastName1",
+      "username": "username1"
+    },
+    {
+      "firstName": "firstName2",
+      "lastName": "lastName2",
+      "username": "username2"
+    },
+    {
+      "firstName": "firstName3",
+      "lastName": "lastName3",
+      "username": "username3"
+    }
+  ]
+}

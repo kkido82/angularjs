@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style/main.css" />
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body ng-app="myApp">
+    <app-header></app-header>
+    <div id="ctrl1" ng-controller="myControllerOne" ng-init="init();">
+      <div my-directive></div>
+      <div ng-controller="myControllerTwo">
+        <div my-directive></div>
+      </div>
+      <span>{{ 0 | boolean }}</span>
+      <div ng-controller="myControllerThree">
+        <div my-directive></div>
+      </div>
+      <app-counter title="my app-counter" count="0"></app-counter>
+      <directive-counter count="count"></directive-counter>
+      <!-- <counter></counter> -->
+      <app-output out="calculate"></app-output>
+      <ul class="table">
+        <li class="header">
+          <span>firstName</span>
+          <span>lastName</span>
+          <span>username</span>
+        </li>
+        <li class="row" ng-repeat="user in users">
+          <span>{{ user.firstName }}</span>
+          <span>{{ user.lastName }}</span>
+          <span>{{ user.username }}</span>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
